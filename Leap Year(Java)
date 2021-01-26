@@ -15,7 +15,6 @@ public class LeapYear {
     System.out.println("Enter Year: ");
     // get year input from user
     int year = x.nextInt();
-    //
     if(isleapyear(year) == true) {
       System.out.println("Is a leap year.");
     }else
