@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class LeapYear {
+  public static boolean isleapyear(int year) {
+    /*
+     * checks conditions of leap year. 
+     * if the year is divisible by 4 AND NOT divisible, it will return true.
+     * OR if the year is divisible by 400 , it will true
+     */
+    return ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
+  }
+
+  public static void main(String[] args) {
+    Scanner x = new Scanner(System.in);
+    System.out.println("Enter Year: ");
+    // get year input from user
+    int year = x.nextInt();
+    //
+    if(isleapyear(year) == true) {
+      System.out.println("Is a leap year.");
+    }else
+      System.out.println("is not a leap year.");
+  }
+}
